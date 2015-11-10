@@ -7,7 +7,7 @@ public class HookController : MonoBehaviour {
 	
 	private Rigidbody rb;
 
-	bool enableHookAndLine = true;
+	bool enableHookAndLine = false;
 
 	int startingTimer = 300;
 
