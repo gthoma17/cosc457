@@ -6,7 +6,11 @@ public class HookController : MonoBehaviour {
 	public float speed;
 	
 	private Rigidbody rb;
-	
+
+	bool enableHookAndLine = true;
+
+	int startingTimer = 300;
+
 	void Start ()
 	{
 		rb = GetComponent<Rigidbody>();
@@ -14,11 +18,19 @@ public class HookController : MonoBehaviour {
 	
 	void FixedUpdate ()
 	{
-		float moveHorizontal = Input.GetAxis ("Horizontal");
-		float moveVertical = Input.GetAxis ("Vertical");
+		if (enableHookAndLine) {
+			float moveHorizontal = Input.GetAxis ("Horizontal");
+			float moveVertical = Input.GetAxis ("Vertical");
 		
-		Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
+			Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
 		
-		rb.AddForce (movement * speed);
+			rb.AddForce (movement * speed);
+		} else {
+			startingTimer--;
+
+		    if(startingTimer == 0) {
+				enableHookAndLine = true;
+			}
+		}
 	}
 }
