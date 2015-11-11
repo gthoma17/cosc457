@@ -11,7 +11,7 @@ public class gameOverOverlay : MonoBehaviour
         if (triggered)
         {
             
-            GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "You were doing well until you died...\n The game will restart in 3 seconds");
+            GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "You were doing well...well, until you died...\n The game will restart in 3 seconds");
             StartCoroutine(restartGame());
         }
     }
