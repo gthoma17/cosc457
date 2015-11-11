@@ -184,7 +184,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 487784, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 487784, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
       propertyPath: m_LocalPosition.z
@@ -218,6 +218,10 @@ Prefab:
       propertyPath: fishStartingTime
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 104992, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
+      propertyPath: m_Name
+      value: SpawnPointHighRight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
   m_IsPrefabParent: 0
@@ -234,7 +238,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 487784, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 487784, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
       propertyPath: m_LocalPosition.z
