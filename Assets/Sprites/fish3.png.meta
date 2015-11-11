@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: 2e0eb0faa78d913459ca104358aaa41d
+timeCreated: 1447264100
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fish3_0
+    21300002: fish3_1
+    21300004: fish3_2
+    21300006: fish3_3
+    21300008: fish3_4
+    21300010: fish3_5
+    21300012: fish3_6
+    21300014: fish3_8
+    21300016: fish3_10
+    21300018: fish3_11
+    21300020: fish3_12
+    21300022: fish3_13
+    21300024: fish3_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fish3_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 218
+        width: 113
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 223
+        width: 60
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 207
+        width: 67
+        height: 90
+      alignment: 9
+      pivot: {x: .514169872, y: .46504879}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_3
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 222
+        width: 157
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_4
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 213
+        width: 113
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 167
+        width: 60
+        height: 36
+      alignment: 9
+      pivot: {x: .597862065, y: .775304139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_6
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 164
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_8
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 91
+        width: 77
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_10
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 19
+        width: 77
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_11
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 77
+        width: 90
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_12
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 15
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 15
+        width: 148
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fish3_14
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 7
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

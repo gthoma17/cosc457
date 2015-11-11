@@ -218,6 +218,10 @@ Prefab:
       propertyPath: fishStartingTime
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 104992, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
   m_IsPrefabParent: 0
@@ -271,6 +275,14 @@ Prefab:
     - target: {fileID: 104992, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
       propertyPath: m_Name
       value: SpawnPointRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476930, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
+      propertyPath: fishPrefab
+      value: 
+      objectReference: {fileID: 136180, guid: 2943337ecae49aa42a899792d5065034, type: 2}
+    - target: {fileID: 104992, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
@@ -329,7 +341,11 @@ Prefab:
     - target: {fileID: 11476930, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
       propertyPath: fishPrefab
       value: 
-      objectReference: {fileID: 127660, guid: bad61281a55feab46a90e466883b7677, type: 2}
+      objectReference: {fileID: 133906, guid: ab2b5fa8966d0334d9a7ccb4d5892e79, type: 2}
+    - target: {fileID: 104992, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
   m_IsPrefabParent: 0
