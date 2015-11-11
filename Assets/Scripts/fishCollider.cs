@@ -7,9 +7,9 @@ public class fishCollider : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("collided");
         gameOverOverlay.setTrigger(true);
-        Destroy(GameObject.FindGameObjectWithTag("Hook"));
-
+        Destroy(this.gameObject);
     }
     
 }
