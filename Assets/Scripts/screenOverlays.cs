@@ -1,17 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class gameOverOverlay : MonoBehaviour
+public class screenOverlays : MonoBehaviour
 {
 
     static bool triggered = false;
+    static bool won = false;
 
     void OnGUI()
     {
         if (triggered)
         {
-            
             GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "You were doing well...well, until you died...\n The game will restart in 3 seconds");
+            StartCoroutine(restartGame());
+        }
+        if (won)
+        {
+            GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "You were doing well...well, until you won...\n The game will restart in 3 seconds");
             StartCoroutine(restartGame());
         }
     }
@@ -20,11 +25,16 @@ public class gameOverOverlay : MonoBehaviour
     {
         triggered = b;
     }
+    public static void setWon(bool b)
+    {
+        won = b;
+    }
 
     IEnumerator restartGame()
     {
         yield return new WaitForSeconds(5);
         triggered = false;
+        won = false;
         Application.LoadLevel(Application.loadedLevel);
     }
 
