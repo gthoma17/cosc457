@@ -145,7 +145,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 6.4000001
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -509,6 +509,7 @@ GameObject:
   - 135: {fileID: 944050740}
   - 23: {fileID: 944050739}
   - 114: {fileID: 944050743}
+  - 135: {fileID: 944050744}
   m_Layer: 0
   m_Name: Hook
   m_TagString: Untagged
@@ -582,6 +583,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804d87621ee72dd41bdc214498ececdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &944050744
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 944050738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &981536242
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,7 +758,7 @@ GameObject:
   - 54: {fileID: 1266088069}
   m_Layer: 0
   m_Name: Ceiling
-  m_TagString: Untagged
+  m_TagString: ceiling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
