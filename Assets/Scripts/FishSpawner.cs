@@ -8,6 +8,7 @@ public class FishSpawner : MonoBehaviour {
 	public GameObject fishPrefab;
 	public float fishStartingTime = 1f;
 	public float secondsBetweenFishSpawn = 1f;
+	public Transform parent;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,7 @@ public class FishSpawner : MonoBehaviour {
 	void CreateFish(){
 		GameObject fish = Instantiate(fishPrefab) as GameObject;
 		fish.transform.position = transform.position;
+		fish.transform.SetParent(parent);
 	}
 		
 }

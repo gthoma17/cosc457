@@ -18,7 +18,7 @@ public class HookController : MonoBehaviour {
 	
 	void FixedUpdate ()
 	{
-		if (enableHookAndLine) {
+		if (enableHookAndLine && !screenOverlays.IsWon() && !screenOverlays.IsTriggered()) {
 			float moveHorizontal = Input.GetAxis ("Horizontal");
 			float moveVertical = Input.GetAxis ("Vertical");
 		
