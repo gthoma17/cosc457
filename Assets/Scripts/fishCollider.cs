@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class fishCollider : MonoBehaviour
 {
 	public Transform HookAndLineParent;
-	FishMover fm = new FishMover();
+	public GameObject fishPrefab;
 
     void OnTriggerEnter(Collider other)
     {
@@ -19,8 +19,12 @@ public class fishCollider : MonoBehaviour
         }
         */
 		else if(other.tag.Equals("Collectible")){
-			other.transform.SetParent(HookAndLineParent);
-			fm.speed = 0;
+			Destroy(other.gameObject);
+			GameObject fish = Instantiate(fishPrefab, this.gameObject.transform.position, this.gameObject.transform.rotation) as GameObject;
+			Destroy(this.gameObject);
+			fish.transform.SetParent(HookAndLineParent);
+			//Destroy(other.GetComponent("FishMover"));
+
 		}
         Debug.Log("collided");    
     }
