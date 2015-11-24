@@ -251,6 +251,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+<<<<<<< HEAD
 --- !u!1001 &156851082
 Prefab:
   m_ObjectHideFlags: 0
@@ -321,6 +322,8 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 487784, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
   m_PrefabInternal: {fileID: 156851082}
+=======
+>>>>>>> origin/master
 --- !u!1001 &200012310
 Prefab:
   m_ObjectHideFlags: 0
@@ -363,6 +366,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4462af2607846e4d805804da5bd71ef, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 --- !u!1 &462460039
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,6 +456,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 462460039}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+=======
+>>>>>>> origin/master
 --- !u!1001 &590142029
 Prefab:
   m_ObjectHideFlags: 0
@@ -952,6 +958,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+<<<<<<< HEAD
 --- !u!1001 &1256566456
 Prefab:
   m_ObjectHideFlags: 0
@@ -1022,6 +1029,8 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 487784, guid: 495e487e80e6df042b7fd3b469ecab02, type: 2}
   m_PrefabInternal: {fileID: 1256566456}
+=======
+>>>>>>> origin/master
 --- !u!1 &1266088068
 GameObject:
   m_ObjectHideFlags: 0
