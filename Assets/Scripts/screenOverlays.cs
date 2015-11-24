@@ -21,11 +21,20 @@ public class screenOverlays : MonoBehaviour
         }
     }
 
-    public static void setTrigger(bool b)
+    public static void SetTrigger(bool b)
     {
         triggered = b;
     }
-    public static void setWon(bool b)
+
+	public static bool IsTriggered(){
+		return triggered;
+	}
+
+	public static bool IsWon(){
+		return won;
+	}
+
+    public static void SetWon(bool b)
     {
         won = b;
     }
