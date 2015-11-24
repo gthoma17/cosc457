@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ceiling
   - Fish
+  - Collectible
   layers:
   - Default
   - TransparentFX

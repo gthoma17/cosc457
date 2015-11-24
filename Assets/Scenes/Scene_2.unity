@@ -538,10 +538,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11452148, guid: 9c93a5a2bf46e2648a6f8bc287df54a9, type: 2}
-      propertyPath: HookAndLineParent
-      value: 
-      objectReference: {fileID: 2024856116}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c93a5a2bf46e2648a6f8bc287df54a9, type: 2}
   m_IsPrefabParent: 0
