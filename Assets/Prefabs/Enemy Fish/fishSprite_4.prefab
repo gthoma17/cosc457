@@ -1,42 +1,42 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &133906
+--- !u!1 &178918
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 441486}
-  - 212: {fileID: 21219252}
-  - 54: {fileID: 5477048}
-  - 65: {fileID: 6502164}
-  - 114: {fileID: 11441454}
+  - 4: {fileID: 464812}
+  - 212: {fileID: 21247448}
+  - 114: {fileID: 11405848}
+  - 54: {fileID: 5406184}
+  - 65: {fileID: 6563508}
   m_Layer: 0
-  m_Name: fishSprite_2
+  m_Name: fishSprite_4
   m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &441486
+--- !u!4 &464812
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133906}
+  m_GameObject: {fileID: 178918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!54 &5477048
+--- !u!54 &5406184
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133906}
+  m_GameObject: {fileID: 178918}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -46,24 +46,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 72
   m_CollisionDetection: 1
---- !u!65 &6502164
+--- !u!65 &6563508
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133906}
+  m_GameObject: {fileID: 178918}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .670000017, y: .899999976, z: .200000003}
-  m_Center: {x: -.00949370861, y: .0314559937, z: 0}
---- !u!114 &11441454
+  m_Size: {x: 1.13, y: .74000001, z: .200000003}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11405848
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133906}
+  m_GameObject: {fileID: 178918}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e61ce8333ea66ad489289967052077bc, type: 3}
@@ -72,13 +72,13 @@ MonoBehaviour:
   speed: 4
   rightBoundaries: 20
   leftBoundaries: -20
-  isMovingRight: 0
---- !u!212 &21219252
+  isMovingLeft: 0
+--- !u!212 &21247448
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133906}
+  m_GameObject: {fileID: 178918}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -97,7 +97,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 2e0eb0faa78d913459ca104358aaa41d, type: 3}
+  m_Sprite: {fileID: 21300008, guid: 2e0eb0faa78d913459ca104358aaa41d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -106,10 +106,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: isMovingRight
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: speed
       value: 4
@@ -120,5 +116,5 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 133906}
+  m_RootGameObject: {fileID: 178918}
   m_IsPrefabParent: 1

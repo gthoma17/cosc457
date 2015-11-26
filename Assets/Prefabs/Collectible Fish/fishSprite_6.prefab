@@ -72,7 +72,7 @@ MonoBehaviour:
   speed: 1
   rightBoundaries: 20
   leftBoundaries: -20
-  isMovingRight: 1
+  isMovingLeft: 0
 --- !u!212 &21291274
 SpriteRenderer:
   m_ObjectHideFlags: 1
