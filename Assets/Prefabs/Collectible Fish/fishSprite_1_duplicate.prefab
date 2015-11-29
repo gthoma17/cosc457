@@ -13,7 +13,7 @@ GameObject:
   - 54: {fileID: 5470174}
   - 65: {fileID: 6544170}
   m_Layer: 0
-  m_Name: fishSprite_1
+  m_Name: fishSprite_1_duplicate
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,13 +66,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 132534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e61ce8333ea66ad489289967052077bc, type: 3}
+  m_Script: {fileID: 11500000, guid: cd6b527ee09dc4f6482e36e000609bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
-  rightBoundaries: 20
-  leftBoundaries: -20
-  isMovingLeft: 0
 --- !u!212 &21276648
 SpriteRenderer:
   m_ObjectHideFlags: 1
