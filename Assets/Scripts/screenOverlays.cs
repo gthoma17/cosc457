@@ -9,6 +9,7 @@ public class screenOverlays : MonoBehaviour
     public GUISkin mySkin = null;
     static string score = "0";
     static string lives = "3";
+    public GameObject hook;
 
     void OnGUI()
     {
@@ -19,7 +20,7 @@ public class screenOverlays : MonoBehaviour
         {
             GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "You were doing well...well, until you died...", "label");
             GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n The game will restart in 3 seconds", "box");
-            GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n\n\n\n\n Your final score was "+score, "box");
+            GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n\n\n\n\n Your final score was "+score+"\n\nThat's the highest score we've had today!", "box");
             StartCoroutine(restartGame());
         }
 
@@ -68,10 +69,21 @@ public class screenOverlays : MonoBehaviour
 
     IEnumerator restartGame()
     {
+        if (won)
+        {
+            hook = GameObject.Find("Hook");
+            hook.SendMessage("resetHook");
+        }
         yield return new WaitForSeconds(3);
         lost = false;
         won = false;
-        Application.LoadLevel(Application.loadedLevel);
+        if (lost)
+        {
+            score = "0";
+            lives = "3";
+            Application.LoadLevel(Application.loadedLevel);
+        }
+        
     }
 
 }

@@ -13,6 +13,21 @@ public class fishCollider : MonoBehaviour
     public Renderer rend;
     public GameObject hookedFish = null;
 
+
+    //public void resetHook()
+    //{
+    //   line.transform.position = this.lineStartPos;
+    //    this.transform.position = this.hookStartPos;
+    //    Destroy(hookedFish);
+    //    hookedFish = null;
+    //}
+
+    public void resetHook ()
+    {
+        this.line.transform.position = this.lineStartPos;
+        this.transform.position = this.hookStartPos;
+    }
+
     void Start()
     {
         rend = GetComponent<Renderer>();
@@ -30,6 +45,7 @@ public class fishCollider : MonoBehaviour
         else if (other.tag.Equals("ceiling") && hookedFish != null)
         {
             screenOverlays.SetWon(true);
+            hookedFish = null;
         }
         else if ( other.tag.Equals("Fish"))
 		{
