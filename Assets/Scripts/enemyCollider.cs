@@ -1,20 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class enemyCollider : MonoBehaviour {
+public class enemyCollider : MonoBehaviour
+{
+    public Renderer rend;
+
+    void Start()
+    {
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
+    }
 
 
-	void OnTriggerEnter(Collider enemy)
+    void OnTriggerEnter(Collider other)
 	{
-		if (enemy.tag.Equals("ceiling"))
-		{
-			screenOverlays.SetWon(true);
-		}
-		else if( enemy.tag.Equals("Fish"))
-		{
-			screenOverlays.SetTrigger(true);
-			Destroy(this.gameObject);
-		}
-		Debug.Log("collided");
-	}
+        if (other.tag.Equals("hook"))
+        {
+            return;
+        }
+        if (other.tag.Equals("ceiling"))
+        {
+            screenOverlays.SetWon(true);
+        }
+        
+        Debug.Log("fish collided with: " + other);
+    }
 }
