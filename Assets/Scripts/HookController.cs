@@ -40,11 +40,11 @@ public class HookController : MonoBehaviour {
 	void OnGUI() {
 		if (!enableHookAndLine) {
 			if (status.Equals ("ready")) {
-				GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n\n\n\n\nGet ready...");
+				GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGet ready...");
 			} else if (status.Equals ("set")) {
-				GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n\n\n\n\nGet set...");
+				GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGet set...");
 			} else if (status.Equals ("fish")) {
-				GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n\n\n\n\nFISH!");
+				GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFISH!");
 			}
 		}
 	}
