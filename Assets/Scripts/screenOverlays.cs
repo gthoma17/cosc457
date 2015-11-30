@@ -73,17 +73,18 @@ public class screenOverlays : MonoBehaviour
         {
             hook = GameObject.Find("Hook");
             hook.SendMessage("resetHook");
+            yield return new WaitForSeconds(1);
         }
-        yield return new WaitForSeconds(3);
-        lost = false;
-        won = false;
-        if (lost)
+        else if (lost)
         {
             score = "0";
             lives = "3";
+            yield return new WaitForSeconds(3);
             Application.LoadLevel(Application.loadedLevel);
         }
         
+        lost = false;
+        won = false;        
     }
 
 }
