@@ -58,7 +58,7 @@ public class screenOverlays : MonoBehaviour
     {
         int tempLives = int.Parse(lives);
         tempLives = tempLives + a;
-        if (tempLives == 0)
+        if (tempLives <= 0)
         {
             lost = true;
         }
