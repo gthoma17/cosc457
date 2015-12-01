@@ -45,6 +45,7 @@ public class fishCollider : MonoBehaviour
         else if (other.tag.Equals("ceiling") && hookedFish != null)
         {
             screenOverlays.SetWon(true);
+            Destroy(hookedFish);
             hookedFish = null;
         }
         else if ( other.tag.Equals("Fish"))

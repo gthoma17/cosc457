@@ -849,6 +849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mySkin: {fileID: 11400000, guid: 5e2454da4a7d95149bb0734100ce7662, type: 2}
+  hook: {fileID: 0}
 --- !u!4 &781887473
 Transform:
   m_ObjectHideFlags: 0

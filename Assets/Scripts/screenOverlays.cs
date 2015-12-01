@@ -19,8 +19,8 @@ public class screenOverlays : MonoBehaviour
         if (lost)
         {
             GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "You were doing well...well, until you died...", "label");
-            GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n The game will restart in 3 seconds", "box");
-            GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n\n\n\n\n Your final score was "+score+"\n\nThat's the highest score we've had today!", "box");
+            GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n The game will restart in 3 seconds", "box");
+            GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "\n\n\n\n\n\n\n\n Your final score was "+score+"\n\nThat's the highest score we've had today!\n\nNow give someone else a chance!", "box");
             StartCoroutine(restartGame());
         }
 
@@ -73,18 +73,17 @@ public class screenOverlays : MonoBehaviour
         {
             hook = GameObject.Find("Hook");
             hook.SendMessage("resetHook");
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(3);
+            won = false;
         }
         else if (lost)
         {
+            yield return new WaitForSeconds(5);
             score = "0";
             lives = "3";
-            yield return new WaitForSeconds(3);
+            lost = false;
             Application.LoadLevel(Application.loadedLevel);
-        }
-        
-        lost = false;
-        won = false;        
+        }      
     }
 
 }
