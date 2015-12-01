@@ -5,8 +5,8 @@ public class BubbleMover : MonoBehaviour {
 	public float speed = 1f;
 	public float boundaries = -1f;
 	// Use this for initialization
-	void Awake () {
-		DontDestroyOnLoad(this.gameObject);
+	void Start () {
+	
 	}
 	
 	// Update is called once per frame
