@@ -17,10 +17,10 @@ public class HookController : MonoBehaviour {
 	
 	void FixedUpdate ()
 	{
-		if (enableHookAndLine) { //&& !screenOverlays.IsWon () && !screenOverlays.IsTriggered ()) {
+		if (enableHookAndLine && !screenOverlays.IsWon () && !screenOverlays.IsLost()) {
 			float moveHorizontal = Input.GetAxis ("Horizontal");
 			float moveVertical = Input.GetAxis ("Vertical");
-		
+
 			Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
 		
 			rb.AddForce (movement * speed);

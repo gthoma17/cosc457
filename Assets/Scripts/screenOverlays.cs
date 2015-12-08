@@ -10,6 +10,7 @@ public class screenOverlays : MonoBehaviour
     static string score = "0";
     static string lives = "3";
     public GameObject hook;
+	bool isDeactivated = false;
 
     void OnGUI()
     {
@@ -27,7 +28,8 @@ public class screenOverlays : MonoBehaviour
         if (won)
         {
             GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "GOOD JOB","label");
-            addScore(827);
+			if(!isDeactivated)
+            	addScore(827);
             StartCoroutine(restartGame());
         }
     }
@@ -73,8 +75,10 @@ public class screenOverlays : MonoBehaviour
         {
             hook = GameObject.Find("Hook");
             hook.SendMessage("resetHook");
+			isDeactivated = true;
             yield return new WaitForSeconds(3);
             won = false;
+			isDeactivated = false;
         }
         else if (lost)
         {

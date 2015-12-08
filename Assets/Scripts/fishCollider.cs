@@ -4,10 +4,10 @@ using System.Collections;
 public class fishCollider : MonoBehaviour
 {
 	public Transform HookAndLineParent;
-    public Transform CaughtFishHolder;
-	public GameObject fishPrefab;
-    public GameObject hookPrefab;
-    public GameObject line;
+    //public Transform CaughtFishHolder;
+	//public GameObject fishPrefab;
+   	//public GameObject hookPrefab;
+   	public GameObject line;
     public Vector3 hookStartPos;
     public Vector3 lineStartPos;
     public Renderer rend;
@@ -58,9 +58,14 @@ public class fishCollider : MonoBehaviour
             Destroy(hookedFish);
         }
 		else if(other.tag.Equals("Collectible") && hookedFish == null){
+			GameObject collectFish = other.gameObject;
+			Destroy(collectFish.GetComponent<FishMover>());
+			collectFish.GetComponent<BoxCollider>().isTrigger = true;
 			Destroy(other.gameObject);
-            GameObject fish = Instantiate(fishPrefab, this.gameObject.transform.position, this.gameObject.transform.rotation) as GameObject;
-            fish.gameObject.tag = "hook";
+            //GameObject fish = Instantiate(fishPrefab, this.gameObject.transform.position, this.gameObject.transform.rotation) as GameObject;
+			GameObject fish = Instantiate(collectFish, this.gameObject.transform.position, this.gameObject.transform.rotation) as GameObject;
+			fish.AddComponent<enemyCollider>();
+			fish.gameObject.tag = "hook";
             fish.transform.SetParent(HookAndLineParent);
             hookedFish = fish;
 		}
