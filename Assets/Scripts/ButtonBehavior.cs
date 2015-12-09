@@ -24,6 +24,7 @@ public class ButtonBehavior : MonoBehaviour {
 
 	public void StartNextLevel(string levelName){
 		Application.LoadLevel(levelName);
+		screenOverlays.setLife(3);
 	}
 
 	public void ExitGame(){

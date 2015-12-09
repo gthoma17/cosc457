@@ -57,7 +57,10 @@ public class fishCollider : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(hookedFish);
         }
-		else if(other.tag.Equals("Collectible") && hookedFish == null){
+		else if(other.tag.Equals("Collectible")){
+			if(hookedFish != null){
+				Destroy(hookedFish);
+			}
 			GameObject collectFish = other.gameObject;
 			Destroy(collectFish.GetComponent<FishMover>());
 			collectFish.GetComponent<BoxCollider>().isTrigger = true;

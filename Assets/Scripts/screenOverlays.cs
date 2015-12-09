@@ -68,6 +68,10 @@ public class screenOverlays : MonoBehaviour
         lives = tempLives.ToString();
     }
 
+	public static void setLife(int a){
+		lives = a.ToString();
+	}
+
 
     IEnumerator restartGame()
     {
