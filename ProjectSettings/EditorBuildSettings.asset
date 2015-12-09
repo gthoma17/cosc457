@@ -12,8 +12,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HowToPage1.unity
   - enabled: 1
-    path: Assets/Scenes/Easy_Difficulty.unity
+    path: Assets/Scenes/OLD Difficulties/Easy_Difficulty_Old.unity
   - enabled: 1
-    path: Assets/Scenes/Medium_Difficulty.unity
+    path: Assets/Scenes/OLD Difficulties/Medium_Difficulty_Old.unity
   - enabled: 1
-    path: Assets/Scenes/Scene_1.unity
+    path: Assets/Scenes/OLD Difficulties/Scene_1.unity
